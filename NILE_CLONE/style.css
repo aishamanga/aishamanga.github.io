@@ -1,0 +1,761 @@
+@font-face {
+    font-family: "Gilda Display";
+    src: url("fonts/Gilda\ Display.woff2");
+}
+@font-face {
+    font-family: "Manrope";
+    src: url("fonts/Manrope.woff2");
+}
+body{
+    margin: 0;
+    font-family: "Manrope";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3f495a;
+}
+.nav-bar{
+    position: fixed;
+    z-index: 10;
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 146px 18px 105px;
+}
+.links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    font-family: "Gilda Display";
+    color: #3f495a;
+}
+.link-items:hover{
+    color: #1c4da1;
+
+}
+.link-items{
+    font-weight: 500px;
+    font-size: 20px;
+}
+.notice{
+    background-color: #1c4da1;
+    color: white;
+    height: 65px;
+    padding: 5px;
+    align-items: flex-start;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.notice-2 > h4{
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin: 0;   
+}
+.notice-2{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+hr{
+    width: 350px;
+    color: white;
+}
+.box1{
+    background-color: #1c4da1;
+    color: white;
+    height: 400px;
+    width: 25%;
+    text-align: center;
+    float: left;
+    margin-left: 10%;
+    border-radius: 10px;
+    border: 2px solid #1c4da1;
+    font-family: 'Manrope';
+    
+    
+}
+.box2{
+  background-color: white;
+  color: black;
+  width: 25%;
+  height: 400px;
+  text-align: center;
+  float: left;
+  margin-left: 3%;
+  border-radius: 10px;
+  border: 2px solid #1c4da1;
+  font-family: 'Manrope';
+  
+}
+.box3{
+  background-color: #1c4da1;
+  color: white;
+  height: 400px;
+  width: 25%;
+  text-align: center;
+  float: right;
+  margin-right: 9%;
+  border-radius: 10px;
+  border: 2px solid #1c4da1;
+  font-family: 'Manrope';
+}
+
+
+.box1 h3{
+  font-weight: 500;
+  line-height: 1.5;
+}
+.box1 h2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.box2 h3{
+  font-weight: 500;
+  line-height: 1.5;
+}
+.box2 h2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.box3 h3{
+  font-weight: 500;
+  line-height: 1.5;
+}
+.box3 h2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+hr{
+  width: 250px;
+}
+.chat-title{
+  font-family: 'Gilda Display';
+  font-size: 40px;
+  line-height: 1.2em;
+  margin-left: 60px;
+  font-weight: 500;
+}
+
+.Global-ready{
+  background-color: #f8f9fe;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  float: left;
+  width: 25%;
+  margin-left: 10%;
+  padding: 60px 0px 30px 0px;
+}
+.Global-ready h2{
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 1.2em;
+  font-style: 'Gilda Display';
+  
+}
+.Global-ready h3{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #3f495a;
+  font-family: 'Manrope';
+}
+
+.employability{
+  background-color: #f8f9fe;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  float: left;
+  width: 25%;
+  margin-left: 3%;
+  padding: 60px 0px 30px 0px;
+}
+.employability h2{
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 1.2em;
+  font-style: 'Gilda Display';
+}
+.employability h3{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #3f495a;
+  font-family: 'Manrope';
+}
+.student-ex{
+  background-color: #f8f9fe;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  float: right;
+  width: 25%;
+  margin-right: 9%;
+  padding: 60px 0px 30px 0px;
+}
+.student-ex h2{
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 1.2em;
+  font-style: 'Gilda Display';
+}
+.student-ex h3{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #3f495a;
+  font-family: 'Manrope';
+}
+
+
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  height: 550px;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.text{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 8px 12px;
+    margin-left: 100px;
+    position: absolute;
+    bottom: 8px;
+    padding-bottom: 100px;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.text h2{
+  font-family: 'Gilda Display';
+  font-size: 40px;
+}
+.text h3{
+  font-family: 'Manrope';
+  font-weight: 500px !important;
+}
+
+.mySlides img{
+  filter: brightness(50%);
+}
+
+.btn{
+  padding: 17px 30px;
+  text-align: center;
+  font-size: 112.5%;
+  color: white;
+  background-color: #1c4da1;
+  box-shadow: none;
+    border-width: 0;
+    border-style: solid;
+    font-family: 'Manrope';
+    float: left;
+    
+}
+.footer{
+  background-color: #1c4da1;
+  color: white;
+  height: 500px;
+}
+
+.footer1{
+  background-color: #1c4da1;
+  color: white;
+  height: 300px;
+  float: left;
+  width: 50%;
+  margin-left: 200px;
+  margin-top: 70px;
+  border-bottom: 50px #7a7a7a;
+
+}
+
+.footer2{
+  background-color: #1c4da1;
+  color: white;
+  height: 320px;
+  width: 30%;
+  float: right;
+  margin-top: 80px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-left: thin white;
+  border-style: ridge;
+}
+
+.end{
+  background-color: rgb(55, 103, 167);
+  height: 100px;
+  color: white;
+}
+
+/*youtube section*/
+.youtube{
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #424242;
+}
+
+/*president section*/
+.president-section{
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+  background-color: #f8f9fe;
+  padding: 100px;
+  margin-top: 600px;
+  
+}
+
+.president-words h3{
+  font-family: "Gilda Display";
+  font-size: 21px;
+  line-height: 32px;
+  text-align: left;
+  font-weight: 450;
+}
+.president-words h2{
+  font-family: "Manrope",Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #1c4da1;
+    font-weight: 600;
+}
+
+.president-words{
+  padding: 40px;
+  background-color: #e4ebf9;  
+}
+
+
+.latest{
+  padding: 0 10px;
+}
+.divider{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 50px;
+}
+.headline{
+  padding: 0 15px;
+}
+.indicator{
+  border-radius: 999px;
+  background-color: #1c4da1;
+  color: #fff;
+  font-size: 12px;
+  width: fit-content;
+  padding: 4.2px 14.2px;
+}
+.story{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+
+}
+.title{
+  color: #000e27;
+  font-family: 'Gilda Display';
+  font-size: 24px;
+  margin: 0px;
+}
+.date{
+  color: #3f495a;
+  font-size: 18px;
+  margin: 0px;
+}
+.button-holder{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.event{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  font-family: 'Gilda Display';
+  margin-bottom: 15px;
+}
+.event-date{
+  display: flex;
+  flex-direction: column;
+  color: #1c4da1;
+  align-items: center;
+  font-size: 20px;
+}
+.event-date span{
+  font-size: 48px;
+}
+.event-name{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+.youtube{
+  background: white;
+
+}
+
+.clubs{
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: 860px;
+  margin-top: 40px;
+}
+.club-activities{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.message{
+  padding: 0 40px 0 120px;
+  background: #f2f5ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000e27;
+}
+.message > .heading{
+  margin: 0 0 30px 0;
+  font-size: 40px;
+  font-family: 'Gilda Display';
+}
+.message > .description{
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+
+.sports{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.clubs h2{
+  font-family: 'Gilda Display';
+  font-size: 40px;
+  color: #000e27;
+  padding-left: 15px;
+  margin-top: 45px;
+}
+
+
+
+
+
+/*chat section*/
+.chat{
+  margin-right: 30px;
+  font-size: 40px;
+  font-family: 'Gilda display', sans-serif;
+  text-align: center;
+  color: #000E27;
+  margin-bottom: 50px;
+}
+
+.students{
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.student{
+  border: 1px solid #e4e8eb;
+  flex-basis: 25%;
+  margin-right: 50px;
+  border-radius: 4%;
+  position: relative;
+}
+
+.time{
+  background-color: #1e4da1;
+  font-size: 12px;
+  height: 40px;
+  font-family: 'Open sans', sans-serif;
+  padding: 1px 15px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 10px;
+}
+
+
+.pic{
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 10px;
+  right: 110px;
+}
+
+.sname{
+  padding: 0 20px;
+  margin-top: 90px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-family: 'Open sans', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.department{
+  font-size: 18px;
+  margin: 0 0 15px;
+  padding: 0 20px;
+  font-family: 'Open sans', sans-serif;
+  text-align: center;
+}
+
+.icome{
+  padding: 0 20px;
+  margin: 0 0 5px;
+  font-family: 'Open sans', sans-serif;
+  color: #757474;
+  font-size: 14px;
+  text-align: center;
+}
+
+.state{
+  margin: 0 0 15px;
+  padding: 0 20px;
+  color: #292929;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Open sans', sans-serif;
+}
+
+.ok{
+  margin: 22px 20px 0;
+  border-top: 1px solid #e4e8eb;
+}
+
+.chatwith{
+  text-align: center;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.but{
+  height: 46px;
+  width: 200px;
+  border: 1px solid #1c4da1;
+  color: #1c4da1;
+  border-radius: 999px;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Open sans', sans-serif;
+  padding: 0 30px;
+}
+
+
+/*faculty*/
+.faculty{
+  margin-top: 35px;
+  width: 100%;
+  height: 670px;
+  padding: 0 0 0 120px;
+  background-image: url('images/faculty-sctn-img.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.faculties{
+  display: flex;
+}
+
+.words-container{
+  padding: 0 20px 0 0;
+  flex-basis: 30%;
+}
+
+.words{
+  margin-top: 90px;
+}
+
+.linea{
+  margin: 0 0 20px;
+}
+
+.lineb{
+  font-size: 48px;
+  font-family: 'Gilda display', sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.linec{
+  font-size: 20px;
+  font-family: 'Gilda display', sans-serif;
+  color: white;
+  margin: 0 0 14.4px;
+}
+
+.lined{
+  font-size: 20px;
+  font-family: 'Gilda display', sans-serif;
+  color: white;
+  margin: 0 0 14.4px;
+}
+
+.but1{
+  height: 58.58px;
+  width: 180.58px;
+  color: #ffffff;
+  border: 1px solid #1c4da1;
+  background: #1c4da1;
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+  padding: 17px 30px;
+}
+
+.but1 p{
+  width: 120.58;
+  height: 24.58;
+}
+
+.fdif{
+  display: flex;
+  height: 670px;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+  padding: 50px 0;
+  background-color: #0000004A;
+}
+
+.fdif-item{
+  width: 50%;
+  height: 200px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.bor{
+  border-right: 1px solid white;
+}
+
+.fdif-item-inner{
+  padding: 55px 29px;
+}
+
+.fdif-item-text{
+  margin: 8px 0 16px;
+  color: white;
+  font-family: 'Gilda display', sans-serif;
+}
+
+.fdif-item-text h3{
+  font-size: 24px;
+  font-weight: bolder;
+}
