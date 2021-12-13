@@ -332,4 +332,7 @@ html, body{
         height: auto;
         border-radius: 10px;
     } 
+    .show-arena{
+        display: none;
+    }
 } 
